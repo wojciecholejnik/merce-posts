@@ -11,8 +11,13 @@ a {
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
+  transition: all 0.3s;
 
   color: #ffffff;
+
+  &:hover {
+    font-size: 45px;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -24,5 +29,9 @@ a {
 
     font-size: 32px;
     line-height: 39px;
+
+    &:hover {
+      font-size: 36px;
+    }
   }
 }

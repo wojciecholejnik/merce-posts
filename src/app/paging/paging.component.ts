@@ -11,6 +11,8 @@ import { faArrowRight , faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 export class PagingComponent implements OnInit {
   @Input() activePage = 0;
   @Input() increaseActivePage = null;
+  @Input() decreaseActivePage = null;
+
   faArrowRight = faArrowRight;
   faArrowLeft = faArrowLeft;
 
@@ -18,9 +20,6 @@ export class PagingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  showActivePage = () => {
   }
 
 }

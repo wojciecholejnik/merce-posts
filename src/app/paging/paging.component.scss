@@ -32,8 +32,13 @@ div.container {
     padding: 15px;
     line-height: 95px;
 
-    fa-icon:hover {
-      cursor: pointer;
+    fa-icon {
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        font-size: 45px;
+      }
     }
   }
 }

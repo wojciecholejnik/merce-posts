@@ -13,6 +13,7 @@ export class PostComponent implements OnInit {
   @Input() body = '';
   @Input() title = '';
   @Input() id = '';
+  randomNumber = Math.floor(Math.random() * 10)
 
   faStarOfLife = faStarOfLife;
   faCode=faCode;

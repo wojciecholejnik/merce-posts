@@ -1,0 +1,71 @@
+<div class="main-wrapper">
+
+  <div class="container">
+
+    <header class="page-header">
+      <div class="icon">
+        <ng-container *ngIf='randomNumber == 0'>
+          <fa-icon [icon]="faStarOfLife"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 1'>
+          <fa-icon [icon]="faCode"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 2'>
+          <fa-icon [icon]="faCompass"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 3'>
+          <fa-icon [icon]="faBone"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 4'>
+          <fa-icon [icon]="faCampground"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 5'>
+          <fa-icon [icon]="faAngleLeft"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 6'>
+          <fa-icon [icon]="faEye"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 7'>
+          <fa-icon [icon]="faCat"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 8'>
+          <fa-icon [icon]="faDog"></fa-icon>
+        </ng-container>
+        <ng-container *ngIf='randomNumber == 9'>
+          <fa-icon [icon]="faHeart"></fa-icon>
+        </ng-container>
+      </div>
+    <div class="close">
+      <fa-icon routerLink="" [icon]="faTimes"></fa-icon>
+
+      </div>
+    </header>
+
+    <section class="post">
+      <header>{{post.title}}</header>
+      <article>{{post.body}}</article>
+    </section>
+
+    <section class="comments">
+      <header>
+        <h1>Comments</h1>
+      </header>
+      <article class="comments-wrapper" >
+        <div>
+          <ng-container *ngFor="let comment of comments">
+            <app-comment [comment]="comment"></app-comment>
+          </ng-container>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <fa-icon routerLink="" [icon]="faTimes"></fa-icon>
+    </footer>
+
+  </div>
+  <app-title></app-title>
+  <app-sub-title></app-sub-title>
+  <app-logo></app-logo>
+</div>
+<router-outlet></router-outlet>

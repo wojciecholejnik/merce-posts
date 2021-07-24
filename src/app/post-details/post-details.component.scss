@@ -1,0 +1,139 @@
+div.main-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(
+    180deg,
+    #5522e8 0%,
+    rgba(113, 34, 232, 0.9375) 100%
+  );
+}
+
+div.container {
+  position: relative;
+  margin-top: 49px;
+  margin-left: 32%;
+  max-height: 85vh;
+  width: 48vw;
+  background-color: white;
+  z-index: 2;
+  overflow-y: auto;
+
+  header.page-header {
+    height: 96px;
+    background-color: #041c26;
+
+    .icon {
+      width: 96px;
+      height: 96px;
+      background: linear-gradient(91.62deg, #c8ff46 31.18%, #97ff46 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      position: absolute;
+      top: 24px;
+      left: 24px;
+    }
+
+    .close {
+      width: 96px;
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 24px;
+
+      fa-icon {
+        transition: all 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  section.post {
+    header {
+      padding: 32px 48px 0 48px;
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    article {
+      padding: 24px 48px 0 48px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  section.comments {
+    margin-top: 50px;
+    padding-bottom: 80px;
+
+    header {
+      background: linear-gradient(91.62deg, #c8ff46 31.18%, #97ff46 100%);
+
+      h1 {
+        height: 28px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        transform: translateY(-35px);
+        margin-left: 48px;
+      }
+    }
+
+    article.comments-wrapper {
+      padding: 32px 24px;
+      overflow-y: hidden;
+    }
+  }
+
+  footer {
+    position: fixed;
+    top: 85vh;
+    background: linear-gradient(91.62deg, #c8ff46 31.18%, #97ff46 100%);
+    height: 80px;
+    width: 48vw;
+
+    fa-icon {
+      width: 96px;
+      height: 96px;
+      background: #041c26;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      position: absolute;
+      top: -50%;
+      right: 24px;
+      color: white;
+      transform: rotate(-45deg);
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        font-size: 40px;
+      }
+    }
+  }
+}

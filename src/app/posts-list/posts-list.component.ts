@@ -17,44 +17,49 @@ export class PostsListComponent implements OnInit {
   p6 = [];
   arrToRender = [];
 
-
-  // changeActivePage(){
-  //   switch (this.activePage) {
-  //     case 1: {
-  //       this.arrToRender = this.p1;
-  //       break;
-  //     };
-  //     case 2: {
-  //       this.arrToRender = this.p2;
-  //       break;
-  //     };
-  //     case 3: {
-  //       this.arrToRender = this.p3;
-  //       break;
-  //     };
-  //     case 4: {
-  //       this.arrToRender = this.p4;
-  //       break;
-  //     };
-  //     case 5: {
-  //       this.arrToRender = this.p5;
-  //       break;
-  //     };
-  //     case 6: {
-  //       this.arrToRender = this.p6;
-  //       break;
-  //     };
-  //     default: {
-  //       this.arrToRender = this.p1;
-  //       break;
-  //     }
-  //   }
-  // }
+  changeActivePage = () => {
+    switch (this.activePage) {
+      case 1: {
+        this.arrToRender = this.p1;
+        break;
+      };
+      case 2: {
+        this.arrToRender = this.p2;
+        break;
+      };
+      case 3: {
+        this.arrToRender = this.p3;
+        break;
+      };
+      case 4: {
+        this.arrToRender = this.p4;
+        break;
+      };
+      case 5: {
+        this.arrToRender = this.p5;
+        break;
+      };
+      case 6: {
+        this.arrToRender = this.p6;
+        break;
+      };
+      default: {
+        this.arrToRender = this.p1;
+        break;
+      }
+    }
+  }
 
   increaseActivePage = () => {
-    this.activePage <= 9 ? this.activePage ++ : '';
-    console.log('increase@');
-  }
+    this.activePage <= 5 ? this.activePage ++ : '';
+    this.changeActivePage();
+  };
+
+  decreaseActivePage = () => {
+    this.activePage > 1 ? this.activePage -- : '';
+    this.changeActivePage();
+  };
+
 
 
   ngOnInit(): void {
