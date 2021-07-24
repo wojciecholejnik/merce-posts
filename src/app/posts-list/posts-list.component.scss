@@ -1,0 +1,14 @@
+div {
+  width: 47vw;
+  box-sizing: border-box;
+  margin-left: 33%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+// @media only screen and (max-width: 1366px) {
+//   :host {
+//     width: 47vw;
+//   }
+// }

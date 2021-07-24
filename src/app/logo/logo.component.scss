@@ -1,0 +1,28 @@
+a {
+  position: fixed;
+  width: 138px;
+  height: 48px;
+  right: 64px;
+  bottom: 48px;
+  text-decoration: none;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1366px) {
+  a {
+    width: 110px;
+    height: 39px;
+    right: 56px;
+    bottom: 40px;
+
+    font-size: 32px;
+    line-height: 39px;
+  }
+}

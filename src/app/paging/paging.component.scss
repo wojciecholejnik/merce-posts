@@ -1,0 +1,66 @@
+div.container {
+  position: fixed;
+  width: 240px;
+  height: 95px;
+  right: 40px;
+  top: 68px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 47px;
+  color: white;
+
+  display: flex;
+  justify-content: flex-end;
+
+  .active {
+    color: #c8ff46;
+    font-size: 64px;
+    font-weight: 300;
+    font-weight: 600;
+    line-height: 95px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    height: 100%;
+    color: white;
+    font-size: 40px;
+    padding: 15px;
+    line-height: 95px;
+
+    fa-icon:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  div.container {
+    width: 179px;
+    height: 71px;
+    right: 56px;
+    top: 59px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+
+    .active {
+      font-size: 45px;
+      font-weight: 300;
+      line-height: 71px;
+    }
+
+    button {
+      height: 100%;
+      font-size: 30px;
+      padding: 10px;
+      line-height: 71px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="container">
+  <button class="right"><fa-icon [icon]="faArrowLeft"></fa-icon></button>
+    <div class="wrapper">
+      <span class="active">{{ activePage < 10 ? ("0" + activePage) : activePage}}</span>/06
+    </div>
+    <button onclick="increaseActivePage()"><fa-icon [icon]="faArrowRight"></fa-icon>
+</button>
+</div>

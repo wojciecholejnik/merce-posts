@@ -1,0 +1,45 @@
+
+  <header>
+    <div class="icon">
+      <ng-container *ngIf='id == 1 || id == 11 || id == 21'>
+        <fa-icon [icon]="faStarOfLife"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 2 || id == 12|| id == 22'>
+        <fa-icon [icon]="faCode"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 3 || id == 13|| id == 23'>
+        <fa-icon [icon]="faCompass"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 4 || id == 14|| id == 24'>
+        <fa-icon [icon]="faBone"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 5 || id == 15|| id == 25'>
+        <fa-icon [icon]="faCampground"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 6 || id == 16|| id == 26'>
+        <fa-icon [icon]="faAngleLeft"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 7 || id == 17|| id == 27'>
+        <fa-icon [icon]="faEye"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 8 || id == 18|| id == 28'>
+        <fa-icon [icon]="faCat"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 9 || id == 19|| id == 29'>
+        <fa-icon [icon]="faDog"></fa-icon>
+      </ng-container>
+      <ng-container *ngIf='id == 10 || id == 20|| id >=30'>
+        <fa-icon [icon]="faHeart"></fa-icon>
+      </ng-container>
+    </div>
+  </header>
+
+  <div>
+    <h3>{{title}}</h3>
+    <p class="body">{{body}}</p>
+  </div>
+
+  <footer>
+    <p class="footer">Zobacz</p>
+    <fa-icon [icon]='faArrowRight'></fa-icon>
+  </footer>

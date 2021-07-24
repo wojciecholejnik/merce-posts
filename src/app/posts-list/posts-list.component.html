@@ -1,0 +1,10 @@
+<div>
+  <app-paging activePage={{activePage}} increaseActivePage={{increaseActivePage}}></app-paging>
+    <ng-container *ngFor="let post of arrToRender ">
+      <app-post
+        title={{post.title}}
+        body={{post.body}}
+        id={{post.id}}
+      ></app-post>
+    </ng-container>
+</div>

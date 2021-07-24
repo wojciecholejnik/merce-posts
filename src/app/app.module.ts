@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TitleComponent } from './title/title.component';
+import { SubTitleComponent } from './sub-title/sub-title.component';
+import { LogoComponent } from './logo/logo.component';
+import { PagingComponent } from './paging/paging.component';
+import { PostsListComponent } from './posts-list/posts-list.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TitleComponent,
+    SubTitleComponent,
+    LogoComponent,
+    PagingComponent,
+    PostsListComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,30 @@
+h1 {
+  position: fixed;
+  width: 375px;
+  height: 95px;
+  left: 64px;
+  bottom: 48px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+
+  color: #ffffff;
+
+  .light {
+    font-weight: 200;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  h1 {
+    width: 281px;
+    height: 71px;
+    left: 56px;
+    bottom: 40px;
+    font-size: 48px;
+    line-height: 71px;
+  }
+}
