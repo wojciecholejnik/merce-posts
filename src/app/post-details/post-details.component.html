@@ -1,6 +1,6 @@
 <div class="main-wrapper">
 
-  <div class="container">
+  <div class="container" id="detailsContainer">
 
     <header class="page-header">
       <div class="icon">
@@ -45,8 +45,9 @@
       <header>{{post.title}}</header>
       <article>{{post.body}}</article>
     </section>
+      <router-outlet></router-outlet>
 
-    <section class="comments">
+    <section class="comments" *ngIf="showComments">
       <header>
         <h1>Comments</h1>
       </header>
@@ -57,15 +58,20 @@
           </ng-container>
         </div>
       </article>
+
+      <footer>
+        <fa-icon [icon]="faTimes" (click)="toggleShowComments()"></fa-icon>
+      </footer>
     </section>
 
-    <footer>
-      <fa-icon routerLink="" [icon]="faTimes"></fa-icon>
-    </footer>
+    <ng-container *ngIf="!showComments">
+      <app-add-comment [comments]="comments" [toggleShowComments]="toggleShowComments"></app-add-comment>
+    </ng-container>
+
+
 
   </div>
   <app-title></app-title>
   <app-sub-title></app-sub-title>
   <app-logo></app-logo>
 </div>
-<router-outlet></router-outlet>

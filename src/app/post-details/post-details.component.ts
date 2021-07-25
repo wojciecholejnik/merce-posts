@@ -10,10 +10,14 @@ import { faTimes, faStarOfLife, faCode, faCompass, faBone, faCampground, faAngle
 })
 export class PostDetailsComponent implements OnInit {
 
-  randomNumber = Math.floor(Math.random() * 10)
+  randomNumber = Math.floor(Math.random() * 10);
 
   post: object = {};
   comments: Array<object> = [];
+  showComments: boolean = false;
+  toggleShowComments = () => {
+    this.showComments = !this.showComments;
+  }
 
   faTimes=faTimes
   faStarOfLife=faStarOfLife;
@@ -34,7 +38,6 @@ export class PostDetailsComponent implements OnInit {
     this.route.paramMap
       .subscribe(params => {
         const id = params.get('id');
-
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         .then(response => response.json())
         .then(json => this.post = json);

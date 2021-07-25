@@ -15,6 +15,10 @@
       font-weight: bold;
       font-size: 20px;
     }
+
+    .email a {
+      color: #5522e8;
+    }
   }
 
   .body {
@@ -24,5 +28,53 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .container {
+    .head {
+      .name {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .email {
+        font-size: 13px;
+      }
+    }
+
+    .body {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+
+    .head {
+      width: 100%;
+      text-align: start;
+      margin-bottom: 8px;
+
+      .name {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      .email a {
+        margin-bottom: 16pxpx;
+      }
+    }
+
+    .body {
+      width: 100%;
+      text-align: start;
+      font-size: 13px;
+    }
   }
 }

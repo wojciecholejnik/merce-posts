@@ -1,26 +1,20 @@
 div.container {
   position: fixed;
-  width: 240px;
-  height: 95px;
   right: 40px;
   top: 68px;
-
   font-family: Oswald;
   font-style: normal;
   font-weight: 300;
   font-size: 32px;
-  line-height: 47px;
   color: white;
-
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 
   .active {
     color: #c8ff46;
     font-size: 64px;
-    font-weight: 300;
     font-weight: 600;
-    line-height: 95px;
   }
 
   button {
@@ -30,7 +24,6 @@ div.container {
     color: white;
     font-size: 40px;
     padding: 15px;
-    line-height: 95px;
 
     fa-icon {
       transition: all 0.3s;
@@ -45,27 +38,61 @@ div.container {
 
 @media only screen and (max-width: 1366px) {
   div.container {
-    width: 179px;
-    height: 71px;
-    right: 56px;
+    right: 40px;
     top: 59px;
-
-    font-weight: 300;
     font-size: 24px;
-    line-height: 36px;
-    color: white;
 
     .active {
-      font-size: 45px;
-      font-weight: 300;
-      line-height: 71px;
+      font-size: 40px;
     }
 
     button {
-      height: 100%;
       font-size: 30px;
       padding: 10px;
-      line-height: 71px;
+
+      fa-icon:hover {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  div.container {
+    right: 32px;
+    top: 50px;
+    font-size: 19px;
+
+    .active {
+      font-size: 35px;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 6px;
+
+      fa-icon:hover {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  div.container {
+    right: 32px;
+    top: auto;
+    bottom: 11.5vh;
+    font-size: 16px;
+    z-index: 5;
+
+    .active {
+      font-size: 28px;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 6px;
     }
   }
 }

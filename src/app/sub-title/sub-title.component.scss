@@ -1,7 +1,5 @@
 h1 {
   position: fixed;
-  width: 375px;
-  height: 95px;
   left: 64px;
   bottom: 48px;
 
@@ -9,8 +7,6 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
-  line-height: 95px;
-
   color: #ffffff;
 
   .light {
@@ -20,11 +16,26 @@ h1 {
 
 @media only screen and (max-width: 1366px) {
   h1 {
-    width: 281px;
-    height: 71px;
     left: 56px;
     bottom: 40px;
-    font-size: 48px;
-    line-height: 71px;
+    font-size: 46px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  h1 {
+    left: 0;
+    bottom: 100px;
+    font-size: 35px;
+    transform: rotate(-90deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 24px;
+    left: 2.5vh;
+    bottom: 2.5vh;
+    transform: rotate(0);
   }
 }

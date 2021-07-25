@@ -1,28 +1,57 @@
 h1 {
   position: fixed;
-  width: 225px;
-  height: 119px;
   left: 64px;
   top: 48px;
-
   font-family: Oswald;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
-  line-height: 119px;
-
-  text-transform: uppercase;
-
   color: #ffffff;
 }
 
 @media only screen and (max-width: 1366px) {
   h1 {
-    width: 180px;
-    height: 95px;
     left: 56px;
     top: 40px;
     font-size: 64px;
-    line-height: 95px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  h1 {
+    left: 40px;
+    top: 30px;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .menu-container {
+    height: 20vh;
+    max-height: 128px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #041c26;
+
+    .menu-subcontainer {
+      margin: 0 10px;
+      height: 10vh;
+      width: calc(100% - 20px);
+      max-height: 64px;
+      border-top-color: #c8ff46;
+      border-top-width: 1px;
+      border-top-style: solid;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  h1 {
+    font-size: 32px;
+    position: fixed;
+    bottom: 11.5vh;
+    top: auto;
+    left: 2.5vh;
+    z-index: 10;
   }
 }

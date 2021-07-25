@@ -1,0 +1,250 @@
+div.container {
+  background: linear-gradient(91.62deg, #c8ff46 31.18%, #97ff46 100%);
+  margin-top: 50px;
+  position: relative;
+  padding: 64px 48px 3px 48px;
+
+  header {
+    h1 {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      position: absolute;
+      top: -35px;
+      left: 48px;
+      color: #041c26;
+    }
+
+    .icon {
+      width: 96px;
+      height: 96px;
+      background: #041c26;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      position: absolute;
+      right: 48px;
+      top: -48px;
+    }
+  }
+
+  #name,
+  #email,
+  #content {
+    height: 56px;
+    width: 45%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    padding-left: 24px;
+    margin-bottom: 24px;
+    border: none;
+  }
+
+  #content {
+    height: 240px;
+    width: calc(100% - 40px);
+    margin: 0;
+    padding: 20px 20px;
+
+    line-height: 35px;
+  }
+
+  form {
+    width: 100%;
+    position: relative;
+  }
+
+  footer {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .button {
+      height: 92px;
+      width: 320px;
+      border: none;
+      background: #041c26;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      fa-icon {
+        display: inline;
+        margin-left: 20px;
+        transform: rotate(-45deg);
+        color: white;
+        font-size: 28px;
+        transition: all 1.5s;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        fa-icon {
+          transform: rotate(135deg);
+        }
+      }
+    }
+
+    p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration-line: underline;
+      color: #041c26;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  div.container {
+    margin-top: 44px;
+    padding: 24px 32px 3px 24px;
+
+    header {
+      h1 {
+        font-size: 24px;
+        top: -20px;
+        left: 32px;
+      }
+
+      .icon {
+        width: 64px;
+        height: 64px;
+        font-size: 24px;
+        right: 32px;
+        top: -32px;
+      }
+    }
+
+    #name,
+    #email,
+    #content {
+      height: 40px;
+
+      font-size: 16px;
+      padding-left: 16x;
+      margin-bottom: 16px;
+    }
+
+    #content {
+      height: 228px;
+      width: calc(100% - 32px);
+      padding: 16px 16px;
+      margin-bottom: 0;
+    }
+
+    footer {
+      .button {
+        height: 64px;
+        width: 216px;
+
+        p {
+          font-size: 20px;
+        }
+
+        fa-icon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  div.container {
+    header {
+      h1 {
+        font-size: 20px;
+        top: -18px;
+        left: 32px;
+      }
+
+      .icon {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+        right: 32px;
+        top: -32px;
+      }
+    }
+
+    #name,
+    #email,
+    #content {
+      height: 56px;
+      width: calc(100% - 32px);
+      font-size: 13px;
+      padding: 0 16px;
+      margin: 10px auto 8px auto;
+    }
+
+    #content {
+      height: 208px;
+      width: calc(100% - 32px);
+      padding: 10px 16px;
+      line-height: 35px;
+    }
+
+    footer {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .button {
+        height: 64px;
+        width: 80%;
+        margin-top: 24px;
+
+        p {
+          font-size: 16px;
+        }
+
+        fa-icon {
+          margin-left: 10px;
+          font-size: 16px;
+        }
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: #041c26;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

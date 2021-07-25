@@ -1,5 +1,5 @@
 div.main-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -14,9 +14,9 @@ div.main-wrapper {
 
 div.container {
   position: relative;
-  margin-top: 49px;
+  margin-top: 3vh;
   margin-left: 32%;
-  max-height: 85vh;
+  max-height: 94vh;
   width: 48vw;
   background-color: white;
   z-index: 2;
@@ -85,7 +85,6 @@ div.container {
 
   section.comments {
     margin-top: 50px;
-    padding-bottom: 80px;
 
     header {
       background: linear-gradient(91.62deg, #c8ff46 31.18%, #97ff46 100%);
@@ -108,8 +107,7 @@ div.container {
   }
 
   footer {
-    position: fixed;
-    top: 85vh;
+    position: relative;
     background: linear-gradient(91.62deg, #c8ff46 31.18%, #97ff46 100%);
     height: 80px;
     width: 48vw;
@@ -128,11 +126,161 @@ div.container {
       right: 24px;
       color: white;
       transform: rotate(-45deg);
-      transition: all 0.3s;
+      transition: all 1s;
+      z-index: 3;
 
       &:hover {
         cursor: pointer;
-        font-size: 40px;
+        transform: rotate(135deg);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  div.container {
+    header.page-header {
+      height: 64px;
+
+      .icon {
+        width: 64px;
+        height: 64px;
+        font-size: 24px;
+        top: 16px;
+        left: 16px;
+      }
+
+      .close {
+        width: 64px;
+        height: 64px;
+        font-size: 17px;
+        top: 0;
+        right: 24px;
+
+        fa-icon:hover {
+          font-size: 20px;
+        }
+      }
+    }
+
+    section.post {
+      header {
+        padding: 40px 32px 0 32px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      article {
+        padding: 16px 32px 0 32px;
+        font-size: 20px;
+        line-height: 32px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    section.comments {
+      margin-top: 44px;
+
+      header {
+        h1 {
+          height: 20px;
+          font-size: 24px;
+          line-height: 36px;
+          transform: translateY(-20px);
+          margin-left: 32px;
+        }
+      }
+    }
+
+    footer {
+      height: 56px;
+      width: 48vw;
+
+      fa-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 23px;
+        right: 32px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  div.container {
+    max-height: calc(100vh - 24px);
+    margin: 24px auto 0 auto;
+    width: 80vw;
+    background-color: white;
+    z-index: 200;
+    overflow-y: auto;
+
+    header.page-header {
+      height: 58px;
+
+      .icon {
+        width: 56px;
+        height: 56px;
+        font-size: 18px;
+        top: 16px;
+        left: 16px;
+      }
+
+      .close {
+        width: 56px;
+        height: 56px;
+        font-size: 15px;
+        top: 0;
+        right: 0;
+
+        fa-icon:hover {
+          font-size: 15px;
+        }
+      }
+    }
+
+    section.post {
+      header {
+        padding: 16px 32px 0 32px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      article {
+        padding: 16px 32px 0 32px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+
+    section.comments {
+      margin-top: 36px;
+
+      header {
+        h1 {
+          height: 12px;
+          font-size: 20px;
+          margin-left: 28px;
+        }
+      }
+
+      article.comments-wrapper {
+        padding: 0 20px 20px 20px;
+        overflow-y: hidden;
+      }
+    }
+
+    footer {
+      height: 48px;
+      width: 100%;
+
+      fa-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 19px;
+        right: 16px;
       }
     }
   }

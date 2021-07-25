@@ -3,12 +3,21 @@ div {
   box-sizing: border-box;
   margin-left: 33%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-// @media only screen and (max-width: 1366px) {
-//   :host {
-//     width: 47vw;
-//   }
-// }
+@media only screen and (max-width: 1020px) {
+  div {
+    width: 55vw;
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  div {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}

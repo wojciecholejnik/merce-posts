@@ -13,6 +13,8 @@ import { PostsListComponent } from './posts-list/posts-list.component';
 import { PostComponent } from './post/post.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { CommentComponent } from './comment/comment.component';
+import { AddCommentComponent } from './add-comment/add-comment.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { CommentComponent } from './comment/comment.component';
     PostComponent,
     PostDetailsComponent,
     CommentComponent,
+    AddCommentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -68,12 +68,12 @@ export class PostsListComponent implements OnInit {
   .then(json => {
     this.posts = json;
     this.p1 = json.splice(0, 16);
-    this.arrToRender = json.splice(0, 16);
     this.p2 = json.splice(0, 16);
     this.p3 = json.splice(0, 16);
     this.p4 = json.splice(0, 16);
     this.p5 = json.splice(0, 16);
     this.p6= json.splice(0, 16);
+    this.changeActivePage();
   })
   }
 
