@@ -14,7 +14,7 @@ export class PostDetailsComponent implements OnInit {
 
   post: object = {};
   comments: Array<object> = [];
-  showComments: boolean = false;
+  showComments: boolean = true;
   toggleShowComments = () => {
     this.showComments = !this.showComments;
   }
