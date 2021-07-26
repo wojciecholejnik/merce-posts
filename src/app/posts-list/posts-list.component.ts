@@ -9,14 +9,14 @@ export class PostsListComponent implements OnInit {
 
   activePage: number = 0;
   arrToRender: any = [];
-  trialArr: any = [];
+  gruppedPosts: any = [];
 
   changeActivePage = (activePage: number) => {
-    this.arrToRender = this.trialArr[activePage]
+    this.arrToRender = this.gruppedPosts[activePage]
   }
 
   increaseActivePage = () => {
-    this.activePage < (this.trialArr.length-1) ? this.activePage ++ : '';
+    this.activePage < (this.gruppedPosts.length-1) ? this.activePage ++ : '';
     this.changeActivePage(this.activePage);
   };
 
@@ -31,7 +31,7 @@ export class PostsListComponent implements OnInit {
   .then(json => {
     do {
       const arr: Array<object> = json.splice(0,18);
-      this.trialArr.push(arr);
+      this.gruppedPosts.push(arr);
     } while (json.length > 0)
       this.changeActivePage(this.activePage);
   })
