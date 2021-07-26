@@ -9,8 +9,8 @@ import { faStarOfLife, faCode, faCompass, faBone, faCampground, faAngleLeft, faE
 
 })
 export class PostComponent implements OnInit {
-  @Input() body = '';
-  @Input() title = '';
+  @Input() body: string = '';
+  @Input() title: string = '';
   @Input() id = '';
   randomNumber = Math.floor(Math.random() * 10)
 

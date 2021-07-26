@@ -9,9 +9,9 @@ import { faArrowRight , faArrowLeft} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./paging.component.scss']
 })
 export class PagingComponent implements OnInit {
-  @Input() activePage = 0;
-  @Input() increaseActivePage = null;
-  @Input() decreaseActivePage = null;
+  @Input() activePage: number = 0;
+  @Input() increaseActivePage: Function | undefined;
+  @Input() decreaseActivePage: Function | undefined;
 
   faArrowRight = faArrowRight;
   faArrowLeft = faArrowLeft;

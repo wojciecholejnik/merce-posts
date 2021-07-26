@@ -1,7 +1,7 @@
 <div class="container">
   <button (click)="decreaseActivePage()" class="right"><fa-icon [icon]="faArrowLeft"></fa-icon></button>
     <div class="wrapper">
-      <span class="active">{{ activePage < 10 ? ("0" + activePage) : activePage}}</span>/06
+      <span class="active">{{ activePage < 10 ? ("0" + (activePage+1)) : (activePage+1)}}</span>/06
     </div>
     <button (click)="increaseActivePage()"><fa-icon [icon]="faArrowRight"></fa-icon>
 </button>

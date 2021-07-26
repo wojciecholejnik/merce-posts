@@ -30,7 +30,7 @@ div.container {
 
       &:hover {
         cursor: pointer;
-        font-size: 45px;
+        color: #c8ff46;
       }
     }
   }
@@ -49,10 +49,6 @@ div.container {
     button {
       font-size: 30px;
       padding: 10px;
-
-      fa-icon:hover {
-        font-size: 34px;
-      }
     }
   }
 }
@@ -70,10 +66,6 @@ div.container {
     button {
       font-size: 24px;
       padding: 6px;
-
-      fa-icon:hover {
-        font-size: 24px;
-      }
     }
   }
 }

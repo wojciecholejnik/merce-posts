@@ -25,15 +25,15 @@ export class AddCommentComponent implements OnInit {
   @Input() comments: any;
 
   postId: any;
-  name = null;
-  email = null;
-  content = null;
+  name: any = null;
+  email: any = null;
+  content: any = null;
 
   getValue(event: Event): string {
     return (event.target as HTMLInputElement).value;
   }
 
-  postComment = () => {
+  postComment: Function = () => {
     if(this.name && this.email && this.content) {
       const dataToSend = {
         postId: this.postId,
@@ -64,7 +64,6 @@ export class AddCommentComponent implements OnInit {
         window.alert('Wprowadź wszystkie dane!')
       }
   }
-
 
   faComment=faComment;
   faTimes=faTimes;
