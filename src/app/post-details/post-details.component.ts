@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { faTimes, faStarOfLife, faCode, faCompass, faBone, faCampground, faAngleLeft, faEye, faCat, faDog, faHeart, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 

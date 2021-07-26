@@ -36,13 +36,12 @@ export class AddCommentComponent implements OnInit {
   postComment = () => {
     if(this.name && this.email && this.content) {
       const dataToSend = {
-      postId: this.postId,
-      name: this.name,
-      email: this.email,
-      body: this.content
-    };
-
-    fetch('https://jsonplaceholder.typicode.com/comments', {
+        postId: this.postId,
+        name: this.name,
+        email: this.email,
+        body: this.content
+      };
+        fetch('https://jsonplaceholder.typicode.com/comments', {
       method: 'POST',
       body: JSON.stringify({
         title: 'foo',
@@ -51,14 +50,14 @@ export class AddCommentComponent implements OnInit {
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
-      },})
-    .then((response) => response.json())
-    .then((json) => {
-      this.comments.unshift({
-        ...json.body,
-        id: json.id
-      });
-    });
+        },})
+        .then((response) => response.json())
+        .then((json) => {
+          this.comments.unshift({
+            ...json.body,
+            id: json.id
+          });
+        });
       window.alert('Komentarz dodano!');
       this.toggleShowComments();
       } else {

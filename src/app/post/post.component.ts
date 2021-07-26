@@ -1,4 +1,3 @@
-import { ValueTransformer } from '@angular/compiler/src/util';
 import { Component, Input, OnInit, } from '@angular/core';
 import { faStarOfLife, faCode, faCompass, faBone, faCampground, faAngleLeft, faEye, faCat, faDog, faHeart, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
@@ -27,10 +26,7 @@ export class PostComponent implements OnInit {
   faHeart=faHeart;
   faArrowRight=faArrowRight;
 
-
   ngOnInit(): void {
   }
-
-
 
 }
