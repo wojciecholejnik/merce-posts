@@ -12,7 +12,8 @@ export class PostDetailsComponent implements OnInit {
 
   randomNumber = Math.floor(Math.random() * 10);
 
-  post: object = {};
+  post: object = {title: 'dupa'};
+  fakePost: object = {title: 'dupa', id: '1230', body: 'some body with some text'};
   comments: Array<object> = [];
   showComments: boolean = true;
   toggleShowComments: Function = () => {
