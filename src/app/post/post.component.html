@@ -34,8 +34,8 @@
   </div>
 </header>
 <div>
-  <h3>{{title}}</h3>
-  <p class="body">{{body}}</p>
+  <h3 [textContent]="title"></h3>
+  <p class="body" [textContent]="body"></p>
 </div>
 <footer [routerLink]="['post-details', id]">
   <p class="footer">Zobacz</p>

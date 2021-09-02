@@ -9,23 +9,20 @@ div(class="container")
       id="name",
       required,
       placeholder="name",
-      [value]="name",
-      (input)="name=getValue($event)")
+      [(ngModel)]="name")
     br
     input(
       type="email",
       value="aenean@ipsum.com",
       id="email",
       placeholder="email",
-      [value]="email",
-      (input)="email=getValue($event)")
+      [(ngModel)]="email")
     br
     textarea(
       type="text",
       placeholder="Pestilentia, shaun ofthe dead scythe...",
       id="content",
-      [value]="content",
-      (input)="content=getValue($event)")
+      [(ngModel)]="content")
   footer
     p((click)="toggleShowComments()") Odrzuć
     button(class='button', (click)="postComment()")

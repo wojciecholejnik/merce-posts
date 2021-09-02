@@ -1,8 +1,8 @@
 
 <div class="container">
   <div class="head">
-    <div class="name">{{comment.name}}</div>
-    <div class="email"><a href="*">{{comment.email}}</a></div>
+    <div class="name" [textContent]="comment.name"></div>
+    <div class="email"><a href="*" [textContent]="comment.email"></a></div>
   </div>
-  <div class="body">{{comment.body}}</div>
+  <div class="body" [textContent]="comment.body"></div>
 </div>

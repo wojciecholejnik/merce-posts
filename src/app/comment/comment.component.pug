@@ -1,7 +1,7 @@
 div(class="container")
   div(class="head")
-    div(class="name") {{comment.name}}
+    div(class="name", [textContent]="comment.name")
     div(class="email")
-      a(href="*") {{comment.email}}
-  div(class="body") {{comment.body}}
+      a(href="*",  [textContent]="comment.email")
+  div(class="body",  [textContent]="comment.body")
 

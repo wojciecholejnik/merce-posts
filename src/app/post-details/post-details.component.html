@@ -40,8 +40,8 @@
         </div>
       </header>
       <section class="post">
-        <header>{{post.title}}</header>
-        <article>{{post.body}}</article>
+        <header [textContent]="post.title"></header>
+        <article [textContent]="post.body"></article>
       </section>
       <router-outlet></router-outlet>
       <section class="comments" *ngIf="showComments">

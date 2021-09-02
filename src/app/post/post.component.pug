@@ -22,8 +22,8 @@ header
       fa-icon([icon]="faHeart")
 
 div
-  h3 {{title}}
-  p(class="body") {{body}}
+  h3([textContent]="title")
+  p(class="body", [textContent]="body")
 
 footer([routerLink]="['post-details', id]")
   p(class="footer") Zobacz

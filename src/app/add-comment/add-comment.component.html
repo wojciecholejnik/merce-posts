@@ -7,9 +7,9 @@
     </div>
   </header>
   <form>
-    <input type="text" id="name" required="required" placeholder="name" [value]="name" (input)="name=getValue($event)"/><br/>
-    <input type="email" value="aenean@ipsum.com" id="email" placeholder="email" [value]="email" (input)="email=getValue($event)"/><br/>
-    <textarea type="text" placeholder="Pestilentia, shaun ofthe dead scythe..." id="content" [value]="content" (input)="content=getValue($event)"></textarea>
+    <input type="text" id="name" required="required" placeholder="name" [(ngModel)]="name"/><br/>
+    <input type="email" value="aenean@ipsum.com" id="email" placeholder="email" [(ngModel)]="email"/><br/>
+    <textarea type="text" placeholder="Pestilentia, shaun ofthe dead scythe..." id="content" [(ngModel)]="content"></textarea>
   </form>
   <footer>
     <p (click)="toggleShowComments()">Odrzuć</p>

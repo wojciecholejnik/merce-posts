@@ -27,8 +27,8 @@ div(class="main-wrapper")
           fa-icon(routerLink="", [icon]="faTimes")
         
       section(class="post")
-        header {{post.title}}
-        article {{post.body}}
+        header([textContent]="post.title")
+        article( [textContent]="post.body")
 
       router-outlet
 

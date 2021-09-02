@@ -24,14 +24,15 @@ export class AddCommentComponent implements OnInit {
   @Input() toggleShowComments: any;
   @Input() comments: any;
 
+
   postId: any;
-  name = '';
+  name: string = 'name';
   email = '';
   content = '';
 
-  getValue(event: Event): string {
-    return (event.target as HTMLInputElement).value;
-  }
+  // getValue(event: Event): string {
+  //   return (event.target as HTMLInputElement).value;
+  // }
 
   postComment: Function = () => {
     if(this.name && this.email && this.content) {
