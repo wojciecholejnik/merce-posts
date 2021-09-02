@@ -1,0 +1,34 @@
+div(class="container")
+  header
+    h1 Add Comment
+    div(class="icon")
+      fa-icon(routerLink="", [icon]="faComment")
+  form
+    input(
+      type="text",
+      id="name",
+      required,
+      placeholder="name",
+      [value]="name",
+      (input)="name=getValue($event)")
+    br
+    input(
+      type="email",
+      value="aenean@ipsum.com",
+      id="email",
+      placeholder="email",
+      [value]="email",
+      (input)="email=getValue($event)")
+    br
+    textarea(
+      type="text",
+      placeholder="Pestilentia, shaun ofthe dead scythe...",
+      id="content",
+      [value]="content",
+      (input)="content=getValue($event)")
+  footer
+    p((click)="toggleShowComments()") Odrzuć
+    button(class='button', (click)="postComment()")
+      p Wyślij
+      fa-icon([icon]="faTimes")
+

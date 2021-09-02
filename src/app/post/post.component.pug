@@ -1,0 +1,32 @@
+header
+  div(class="icon")
+    ng-container(*ngIf='randomNumber == 0')
+      fa-icon([icon]="faStarOfLife")
+    ng-container(*ngIf='randomNumber == 1')
+      fa-icon([icon]="faCode")
+    ng-container(*ngIf='randomNumber == 2')
+      fa-icon([icon]="faCompass")
+    ng-container(*ngIf='randomNumber == 3')
+      fa-icon([icon]="faBone")
+    ng-container(*ngIf='randomNumber == 4')
+      fa-icon([icon]="faCampground")
+    ng-container(*ngIf='randomNumber == 5')
+      fa-icon([icon]="faAngleLeft")
+    ng-container(*ngIf='randomNumber == 6')
+      fa-icon([icon]="faEye")
+    ng-container(*ngIf='randomNumber == 7')
+      fa-icon([icon]="faCat")
+    ng-container(*ngIf='randomNumber == 8')
+      fa-icon([icon]="faDog")
+    ng-container(*ngIf='randomNumber == 9')
+      fa-icon([icon]="faHeart")
+
+div
+  h3 {{title}}
+  p(class="body") {{body}}
+
+footer([routerLink]="['post-details', id]")
+  p(class="footer") Zobacz
+  fa-icon([icon]='faArrowRight')
+
+router-outlet

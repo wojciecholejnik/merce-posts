@@ -1,0 +1,14 @@
+div(class="container")
+
+  app-paging(
+    [activePage]="activePage",
+    [increaseActivePage]="increaseActivePage",
+    [decreaseActivePage]="decreaseActivePage")
+
+
+  ng-container(*ngFor="let post of arrToRender")
+    app-post(
+      [title]="post.title",
+      [body]="post.body",
+      [id]="post.id")
+
