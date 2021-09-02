@@ -1,47 +1,44 @@
 
-  <header>
-    <div class="icon">
-      <ng-container *ngIf='randomNumber == 0'>
-        <fa-icon [icon]="faStarOfLife"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 1'>
-        <fa-icon [icon]="faCode"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 2'>
-        <fa-icon [icon]="faCompass"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 3'>
-        <fa-icon [icon]="faBone"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 4'>
-        <fa-icon [icon]="faCampground"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 5'>
-        <fa-icon [icon]="faAngleLeft"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 6'>
-        <fa-icon [icon]="faEye"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 7'>
-        <fa-icon [icon]="faCat"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 8'>
-        <fa-icon [icon]="faDog"></fa-icon>
-      </ng-container>
-      <ng-container *ngIf='randomNumber == 9'>
-        <fa-icon [icon]="faHeart"></fa-icon>
-      </ng-container>
-    </div>
-  </header>
-
-  <div>
-    <h3>{{title}}</h3>
-    <p class="body">{{body}}</p>
+<header>
+  <div class="icon">
+    <ng-container *ngIf="randomNumber == 0">
+      <fa-icon [icon]="faStarOfLife"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 1">
+      <fa-icon [icon]="faCode"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 2">
+      <fa-icon [icon]="faCompass"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 3">
+      <fa-icon [icon]="faBone"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 4">
+      <fa-icon [icon]="faCampground"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 5">
+      <fa-icon [icon]="faAngleLeft"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 6">
+      <fa-icon [icon]="faEye"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 7">
+      <fa-icon [icon]="faCat"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 8">
+      <fa-icon [icon]="faDog"></fa-icon>
+    </ng-container>
+    <ng-container *ngIf="randomNumber == 9">
+      <fa-icon [icon]="faHeart"></fa-icon>
+    </ng-container>
   </div>
-
-  <footer [routerLink]="['post-details', id]">
-    <p class="footer">Zobacz</p>
-    <fa-icon [icon]='faArrowRight'></fa-icon>
-  </footer>
-
-  <router-outlet></router-outlet>
+</header>
+<div>
+  <h3>{{title}}</h3>
+  <p class="body">{{body}}</p>
+</div>
+<footer [routerLink]="['post-details', id]">
+  <p class="footer">Zobacz</p>
+  <fa-icon [icon]="faArrowRight"></fa-icon>
+</footer>
+<router-outlet></router-outlet>
