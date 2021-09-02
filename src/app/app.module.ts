@@ -8,12 +8,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TitleComponent } from './title/title.component';
 import { SubTitleComponent } from './sub-title/sub-title.component';
 import { LogoComponent } from './logo/logo.component';
-// import { PagingComponent } from './paging/paging.component';
+import { PagingComponent } from './paging/paging.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { PostComponent } from './post/post.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
-// import { CommentComponent } from './comment/comment.component';
-// import { AddCommentComponent } from './add-comment/add-comment.component';
+import { CommentComponent } from './comment/comment.component';
+import { AddCommentComponent } from './add-comment/add-comment.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +21,12 @@ import { PostDetailsComponent } from './post-details/post-details.component';
     TitleComponent,
     SubTitleComponent,
     LogoComponent,
-    // PagingComponent,
+    PagingComponent,
     PostsListComponent,
     PostComponent,
     PostDetailsComponent,
-    // CommentComponent,
-    // AddCommentComponent,
+    CommentComponent,
+    AddCommentComponent,
   ],
   imports: [
     BrowserModule,

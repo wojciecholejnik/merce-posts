@@ -10,11 +10,12 @@ import { faTimes, faStarOfLife, faCode, faCompass, faBone, faCampground, faAngle
 })
 export class PostDetailsComponent implements OnInit {
 
+  constructor(private route: ActivatedRoute) { }
+
   randomNumber = Math.floor(Math.random() * 10);
 
-  post: object = {title: 'dupa'};
-  fakePost: object = {title: 'dupa', id: '1230', body: 'some body with some text'};
-  comments: Array<object> = [];
+  post = {title: '', body: ''};
+  comments = [];
   showComments: boolean = true;
   toggleShowComments: Function = () => {
     this.showComments = !this.showComments;
@@ -33,7 +34,6 @@ export class PostDetailsComponent implements OnInit {
   faHeart=faHeart;
   faArrowRight=faArrowRight;
 
-  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap
