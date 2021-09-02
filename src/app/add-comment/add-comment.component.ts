@@ -25,9 +25,9 @@ export class AddCommentComponent implements OnInit {
   @Input() comments: any;
 
   postId: any;
-  name: any = null;
-  email: any = null;
-  content: any = null;
+  name = '';
+  email = '';
+  content = '';
 
   getValue(event: Event): string {
     return (event.target as HTMLInputElement).value;
