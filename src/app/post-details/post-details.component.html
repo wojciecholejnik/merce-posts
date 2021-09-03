@@ -60,7 +60,7 @@
         </footer>
       </section>
       <ng-container *ngIf="!showComments">
-        <app-add-comment [comments]="toggleShowComments"></app-add-comment>
+        <app-add-comment [comments]="comments" [toggleShowComments]="toggleShowComments"></app-add-comment>
       </ng-container>
     </div>
   </div>

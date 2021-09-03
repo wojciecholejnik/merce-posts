@@ -2,27 +2,31 @@ div(class="container")
   header
     h1 Add Comment
     div(class="icon")
-      fa-icon(routerLink="", [icon]="faComment")
+      fa-icon(routerLink="" [icon]="faComment")
+
   form
     input(
       type="text",
       id="name",
       required,
       placeholder="name",
-      [(ngModel)]="name")
+      [(ngModel)]="name",
+      [ngModelOptions]="{standalone: true}")
     br
     input(
       type="email",
-      value="aenean@ipsum.com",
       id="email",
       placeholder="email",
-      [(ngModel)]="email")
+      [(ngModel)]="email",
+      [ngModelOptions]="{standalone: true}")
     br
     textarea(
       type="text",
       placeholder="Pestilentia, shaun ofthe dead scythe...",
       id="content",
-      [(ngModel)]="content")
+      [(ngModel)]="content",
+      [ngModelOptions]="{standalone: true}")
+
   footer
     p((click)="toggleShowComments()") Odrzuć
     button(class='button', (click)="postComment()")

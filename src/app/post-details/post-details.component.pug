@@ -43,4 +43,4 @@ div(class="main-wrapper")
           fa-icon([icon]="faTimes", (click)="toggleShowComments()")
 
       ng-container(*ngIf="!showComments")
-        app-add-comment([comments]="comments" [toggleShowComments]="toggleShowComments")
+        app-add-comment([comments]="comments", [toggleShowComments]="toggleShowComments")

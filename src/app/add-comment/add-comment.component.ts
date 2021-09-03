@@ -26,13 +26,9 @@ export class AddCommentComponent implements OnInit {
 
 
   postId: any;
-  name: string = 'name';
+  name = '';
   email = '';
   content = '';
-
-  // getValue(event: Event): string {
-  //   return (event.target as HTMLInputElement).value;
-  // }
 
   postComment: Function = () => {
     if(this.name && this.email && this.content) {
